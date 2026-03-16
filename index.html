@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                DEMONTAZH <span>PRO</span>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#portfolio">Роботи</a></li>
+                    <li><a href="#prices">Ціни</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-contacts">
+                <div class="phone-block">
+                    <a href="tel:+380671633953">+380 (67) 163-39-53</a>
+                    <span class="jackhammer">🔨</span>
+                </div>
+                <button class="btn-call" data-i18n="button_call">Замовити дзвінок</button>
+            </div>
+        </div>
+        <div class="safety-line"></div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Професійний <span>демонтаж</span> та алмазна різка</h1>
+                <p class="hero-subtitle">Робимо отвори в бетоні та цеглі без пилу, тріщин та зайвого шуму.</p>
+                <div class="hero-btns">
+                    <a href="#form" class="btn-main">Розрахувати вартість</a>
+                    <a href="#portfolio" class="btn-secondary">Наші роботи</a>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title">Наші <span>послуги</span></h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="card-num">01</div>
+                        <h3>Алмазна різка</h3>
+                        <p>Створення дверних та віконних отворів без пилу та вібрацій.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-num">02</div>
+                        <h3>Демонтаж стін</h3>
+                        <p>Повне або часткове знесення перегородок у квартирах та офісах.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="card-num">03</div>
+                        <h3>Посилення отворів</h3>
+                        <p>Монтаж металоконструкцій для безпеки вашої оселі.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="contact-form">
+        <h2>Заказать демонтаж проема</h2>
+        <form id="tg-form">
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+            </div>
+
+            <div class="input-group">
+                <input type="text" id="phone" name="phone" placeholder="+380 (__) ___-__-__" required>
+            </div>
+
+            <div class="input-group">
+                <select name="service">
+                    <option value="Дверной проем">Дверной проем</option>
+                    <option value="Окно">Увеличение окна</option>
+                    <option value="Снос перегородки">Снос перегородки</option>
+                    <option value="Другое">Другое (консультация)</option>
+                </select>
+            </div>
+
+            <button type="submit" id="btn-send">Отправить</button>
+        </form>
+    </section>
+
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
