@@ -1,15 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <title>DEMONTAZH PRO — Алмазна різка та демонтаж стін</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSGBG08FBH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-JSGBG08FBH');
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
-    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <header class="main-header">
         <div class="container">
             <div class="logo">
@@ -27,87 +48,191 @@
             <div class="header-contacts">
                 <div class="phone-block">
                     <a href="tel:+380671633953">+380 (67) 163-39-53</a>
-                    <span class="jackhammer">🔨</span>
+                    <span class="jackhammer">
+                        <img src="img/free-icon-jackhammer-3981563.png" alt="drill" class="drill-animation">
+                    </span>
                 </div>
-                <button class="btn-call" data-i18n="button_call">Замовити дзвінок</button>
+                <button class="btn-call"
+                    onclick="document.querySelector('#form-section').scrollIntoView({behavior: 'smooth'})">
+                    Замовити дзвінок
+                </button>
             </div>
         </div>
         <div class="safety-line"></div>
     </header>
+
     <main>
         <section class="hero">
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-up">
                 <h1 class="hero-title">Професійний <span>демонтаж</span> та алмазна різка</h1>
-                <p class="hero-subtitle">Робимо отвори в бетоні та цеглі без пилу, тріщин та зайвого шуму.</p>
+                <p class="hero-subtitle">Робимо отвори в бетоні та цеглі. Займаємося професійною алмазною різкою та
+                    вивозом сміття</p>
                 <div class="hero-btns">
-                    <a href="#form" class="btn-main">Розрахувати вартість</a>
+                    <a href="#form-section" class="btn-main">Розрахувати орієнтовну вартість</a>
                     <a href="#portfolio" class="btn-secondary">Наші роботи</a>
                 </div>
             </div>
         </section>
+
         <section id="services" class="services">
             <div class="container">
-                <h2 class="section-title">Наші <span>послуги</span></h2>
+                <h2 class="section-title" data-aos="fade-right">Наші <span>послуги</span></h2>
                 <div class="services-grid">
-                    <div class="service-card">
+                    <div class="service-card" data-aos="flip-left" data-aos-delay="100">
                         <div class="card-num">01</div>
                         <h3>Алмазна різка</h3>
-                        <p>Створення дверних та віконних отворів без пилу та вібрацій.</p>
+                        <p>Створення дверних та віконних отворів</p>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card" data-aos="flip-left" data-aos-delay="300">
                         <div class="card-num">02</div>
                         <h3>Демонтаж стін</h3>
-                        <p>Повне або часткове знесення перегородок у квартирах та офісах.</p>
+                        <p>Повне або часткове знесення перегородок у квартирах, будинках та офісах.</p>
                     </div>
-                    <div class="service-card">
+                    <div class="service-card" data-aos="flip-left" data-aos-delay="500">
                         <div class="card-num">03</div>
-                        <h3>Посилення отворів</h3>
-                        <p>Монтаж металоконструкцій для безпеки вашої оселі.</p>
+                        <h3>Збиття плитки та Демонтаж стяжок</h3>
+                        <p>Попрощайтеся зі старим ремонтом легко</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Наші <span>роботи</span></h2>
+
+                <div class="swiper mySwiper" data-aos="zoom-in">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/1.jpg" alt="Демонтаж">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/2.jpg" alt="Бетон">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/3.jpg" alt="Стена">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/4.jpg" alt="Стена">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/5.jpg" alt="Стена">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/6.jpg" alt="Стена">
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="steps" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section-title">4 кроки до <span>результату</span></h2>
+                <div class="steps-grid">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <h4>Дзвінок</h4>
+                        <p>Обговорюємо задачу та робимо попередній розрахунок.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <h4>Замір</h4>
+                        <p>Виїзд на об'єкт для точного оцінювання складності.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <h4>Робота</h4>
+                        <p>Швидке виконання демонтажу, або обраної вами послуги.</p>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <h4>Прибирання</h4>
+                        <p>Вивіз сміття з об'єкту.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="faq" id="faq">
+            <div class="container">
+                <h2 class="section-title">Часті <span>запитання</span></h2>
+                <div class="faq-container">
+                    <details class="faq-item" data-aos="fade-up">
+                        <summary>Ви вивозите сміття?</summary>
+                        <p>Так, у нас є послуга пакування та вивозу будівельного сміття за домовленістю.</p>
+                    </details>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="form-section" class="contact-form-section">
+            <div class="container">
+                <div class="form-wrapper" data-aos="zoom-in">
+                    <h2>Замовити демонтаж</h2>
+                    <p>Залиште заявку, і ми вам передзвонимо найближчим часом</p>
+
+                    <form id="tg-form">
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="Ваше ім'я" required>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" id="phone" name="phone" placeholder="+380 (__) ___-__-__" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Оберіть послугу:</label>
+                            <select name="service" id="select-service">
+                                <option value="Дверний проріз">Дверний проріз</option>
+                                <option value="Вікно">Збільшення вікна</option>
+                                <option value="Знесення перегородки">Знесення перегородки</option>
+                                <option value="Інше">Інше (консультація)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Матеріал стін:</label>
+                            <select name="material" id="select-material">
+                                <option value="Цегла">Цегла</option>
+                                <option value="Бетон">Бетон</option>
+                                <option value="Армований бетон">Армований бетон (панель)</option>
+                                <option value="Газоблок/Піноблок">Газоблок / Піноблок</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" name="call_time"
+                                placeholder="Зручний час для дзвінка (напр. після 18:00)">
+                        </div>
+
+                        <button type="submit" id="btn-send" class="btn-main">Відправити</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </main>
-    <section class="contact-form">
-        <h2>Заказать демонтаж проема</h2>
-        <form id="tg-form">
-            <div class="input-group">
-                <input type="text" name="name" placeholder="Ваше имя" required>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 DEMONTAZH PRO. Всі права захищені.</p>
+            <div class="footer-links">
+                <a href="https://www.olx.ua" target="_blank">Ми на OLX</a>
+                <a href="tel:+380671633953">+380 (67) 163-39-53</a>
             </div>
-
-            <div class="input-group">
-                <input type="text" id="phone" name="phone" placeholder="+380 (__) ___-__-__" required>
-            </div>
-
-            <div class="input-group">
-                <select name="service">
-                    <option value="Дверной проем">Дверной проем</option>
-                    <option value="Окно">Увеличение окна</option>
-                    <option value="Снос перегородки">Снос перегородки</option>
-                    <option value="Другое">Другое (консультация)</option>
-                </select>
-            </div>
-
-            <button type="submit" id="btn-send">Отправить</button>
-        </form>
-    </section>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSGBG08FBH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-JSGBG08FBH');
-    </script>
+        </div>
+    </footer>
 
     <script src="https://unpkg.com/imask"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
