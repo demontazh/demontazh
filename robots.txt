@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://demontazh-khm.pp.ua/sitemap.xml

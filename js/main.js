@@ -106,11 +106,26 @@ new Swiper(".mySwiper", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-    coverflowEffect: { rotate: 50, stretch: 0, depth: 100, modifier: 1, slideShadows: true },
+    coverflowEffect: { 
+        rotate: 50, 
+        stretch: 0, 
+        depth: 100, 
+        modifier: 1, 
+        slideShadows: true 
+    },
     loop: true,
+    
+    // Вмикаємо ліниве завантаження
+    lazy: true,
+    preloadImages: false, // Вимикаємо стандартне завантаження всіх картинок
+    watchSlidesProgress: true, // Потрібно для коректної роботи lazy з ефектами
+
     autoplay: { delay: 3000, disableOnInteraction: false },
     pagination: { el: ".swiper-pagination", clickable: true },
-    navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }
+    navigation: { 
+        nextEl: ".swiper-button-next", 
+        prevEl: ".swiper-button-prev" 
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function() {

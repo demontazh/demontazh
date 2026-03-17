@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DEMONTAZH PRO — Алмазна різка та демонтаж стін</title>
+    
+    <title>Демонтаж Хмельницький | Знесення стін, вивіз сміття — DEMONTAZH PRO</title>
+    <meta name="description" content="Професійний демонтаж у Хмельницькому: знесення стін, перегородок, збиття стяжки та плитки. Швидко, акуратно, з вивозом сміття. Замовляйте безкоштовний замір!">
+    <meta name="keywords" content="демонтаж хмельницький, знесення стін хмельницький, вивіз будівельного сміття, демонтажні роботи ціна хмельницький">
+    <meta name="theme-color" content="#222222">
+    <meta property="og:title" content="Демонтаж Хмельницький — Швидко та надійно">
+    <meta property="og:description" content="Знесемо старі стіни та підготуємо квартиру до ремонту. Працюємо по Хмельницькому">
+    <meta property="og:image" content="img/profesiyniy-demontazh-vidbiynym-molotkom.jpg"> 
+    <meta property="og:url" content="https://demontazh-khm.pp.ua">
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JSGBG08FBH"></script>
     <script>
@@ -25,6 +33,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preload" as="image" href="img/header-bg-image.webp">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -52,7 +61,7 @@
                         <img src="img/free-icon-jackhammer-3981563.png" alt="drill" class="drill-animation">
                     </span>
                 </div>
-                <button class="btn-call"
+                <button class="btn-call" aria-label="Замовити зворотній дзвінок"
                     onclick="document.querySelector('#form-section').scrollIntoView({behavior: 'smooth'})">
                     Замовити дзвінок
                 </button>
@@ -64,7 +73,7 @@
     <main>
         <section class="hero">
             <div class="hero-content" data-aos="fade-up">
-                <h1 class="hero-title">Професійний <span>демонтаж</span> та алмазна різка</h1>
+                <h1 class="hero-title">Демонтаж у <span>Хмельницькому</span>: професійне знесення стін та перегородок</h1>
                 <p class="hero-subtitle">Робимо отвори в бетоні та цеглі. Надаємо послуги відбійними молотками та вивозимо сміття</p>
                 <div class="hero-btns">
                     <a href="#form-section" class="btn-main">Замовити дзвінок</a>
@@ -98,39 +107,42 @@
 
         <section id="portfolio" class="portfolio">
             <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Наші <span>роботи</span></h2>
+                <p class="section-title" data-aos="fade-up">Наші <span>роботи</span></з>
 
                 <div class="swiper mySwiper" data-aos="zoom-in">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="img/1.jpg" alt="Демонтаж">
+                            <img src="img/stvorennya-otvory-v-armovanomu-betoni.webp" alt="Створення отвору в армованому бетоні">
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/2.jpg" alt="Бетон">
+                            <img src="img/skladniy-demontazh-betony.webp" alt="Складний демонтаж бетонної конструкції">
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/3.jpg" alt="Стена">
+                            <img src="img/rozshirennya-otvory-pid-vikno.webp" loading="lazy" class="swiper-lazy" alt="Розширення віконного отвору">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/4.jpg" alt="Стена">
+                            <img src="img/stvorennya-otvora-pid-dveri.webp" loading="lazy" class="swiper-lazy" alt="Створення отвору у стіні під двері">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/5.jpg" alt="Стена">
+                            <img src="img/stvorennya-arky-pid-dveri.webp" loading="lazy" class="swiper-lazy" alt="Створення арки у стіні під двері">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/6.jpg" alt="Стена">
+                            <img src="img/otvir-v-blockah-z-shveleramy.webp" alt="Створення отвору в блоках з швелерами">
                         </div>
                     </div>
 
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next" aria-label="Наступне фото"></div>
+                    <div class="swiper-button-prev" aria-label="Попереднє фото"></div>
                     <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
         <section class="steps" data-aos="fade-up">
             <div class="container">
-                <h2 class="section-title">4 кроки до <span>результату</span></h2>
+                <p class="section-title">4 кроки до <span>результату</span></p>
                 <div class="steps-grid">
                     <div class="step-item">
                         <div class="step-number">1</div>
@@ -170,21 +182,23 @@
         <section id="form-section" class="contact-form-section">
             <div class="container">
                 <div class="form-wrapper" data-aos="zoom-in">
-                    <h2>Замовити демонтаж</h2>
+                    <h4 class="demontazh-p">Замовити демонтаж</h4>
                     <p>Залиште заявку, і ми вам передзвонимо найближчим часом</p>
 
                     <form id="tg-form">
                         <div class="input-group">
-                            <input type="text" name="name" placeholder="Ваше ім'я" required>
+                            <label for="user-name" class="visually-hidden">Ваше ім'я</label>
+                            <input type="text" id="user-name" name="name" placeholder="Ваше ім'я" required>
                         </div>
 
                         <div class="input-group">
+                            <label for="phone" class="visually-hidden">Ваш номер телефону</label>
                             <input type="text" id="phone" name="phone" placeholder="+380 (__) ___-__-__" required>
                         </div>
 
                         <div class="input-group">
-                            <label>Оберіть послугу:</label>
-                            <select name="service" id="select-service">
+                            <label for="select-service">Оберіть послугу:</label>
+                            <select name="service" id="select-service" aria-label="Оберіть потрібну вам послугу">
                                 <option value="Дверний проріз">Дверний проріз</option>
                                 <option value="Зібльшення отвору">Збільшення отвору</option>
                                 <option value="Знесення перегородки">Знесення перегородок</option>
@@ -193,8 +207,8 @@
                         </div>
 
                         <div class="input-group">
-                            <label>Матеріал стін:</label>
-                            <select name="material" id="select-material">
+                            <label for="select-material">Матеріал стін:</label>
+                            <select name="material" id="select-material" aria-label="Оберіть з якого матеріалу зроблена стіна">
                                 <option value="Цегла">Цегла</option>
                                 <option value="Бетон">Бетон</option>
                                 <option value="Армований бетон">Армований бетон (панель)</option>
@@ -204,15 +218,21 @@
 
                         <div class="input-group">
                             <label>Зручний час для дзвінка:</label>
-                            <input type="time" name="call_time" value="09:00" required>
+                            <input type="time" name="call_time" value="09:00" required aria-label="Оберіть зручний час для дзвінка">
                         </div>
 
-                        <button type="submit" id="btn-send" class="btn-main">Відправити</button>
+                        <button type="submit" id="btn-send" class="btn-main" aria-label="Подати заявку на демонтаж">Відправити</button>
                     </form>
                 </div>
             </div>
         </section>
-
+        <section class="seo-text" style="display:none;"> 
+            <div class="container">
+                <h2>Послуги демонтажу в Хмельницькому: чому обирають нас?</h2>
+                <p>Шукаєте надійний <strong>демонтаж у Хмельницькому</strong>? Наша команда виконує повний спектр робіт: від знесення міжкімнатних перегородок до повного розбору старих будівель. Ми працюємо у всіх районах міста (Озерна, Виставка, Центр, Дубове) та виїжджаємо по області. Використовуємо потужні відбійні молотки та власний генератор, що гарантує автономність на об'єкті.</p>
+                <p>Наші переваги: низька <strong>ціна на демонтаж стін</strong>, акуратність, пакування та вивіз будівельного сміття. Підготуємо вашу квартиру до ремонту за 1-2 дні!</p>
+            </div>
+        </section>
     </main>
 
     <footer class="main-footer">
