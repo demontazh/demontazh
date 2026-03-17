@@ -118,7 +118,3 @@ document.addEventListener('DOMContentLoaded', function() {
     new Choices('#select-service', choicesConfig);
     new Choices('#select-material', choicesConfig);
 });
-
-window.addEventListener('scroll', function() {
-    document.querySelector('.main-header').classList.toggle('header-compact', window.scrollY > 50);
-});
