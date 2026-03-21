@@ -339,10 +339,10 @@ input[type="time"]:focus {
 
 /* ===================== STEPS ===================== */
 .steps-grid {
-    display: grid;
-    /* Указываем, что у нас ровно 2 колонки одинаковой ширины */
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px;
+    display: flex;             /* Флекс проще для одной колонки */
+    flex-direction: column;    /* Всё строго друг под другом */
+    align-items: center;       /* Центрируем каждый шаг */
+    gap: 40px;                 /* Расстояние между шагами */
 }
 
 .step-item:last-child {
@@ -518,5 +518,18 @@ input[type="time"]:focus {
         width: 100%;
         padding: 15px 10px;
         font-size: 0.9rem;
+    }
+}
+@media screen and (min-width: 481px) {
+    .steps-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Включаем 2 колонки */
+        gap: 30px;
+    }
+
+    .step-item:last-child {
+        grid-column: 1 / span 2; /* Растягиваем на всю ширину */
+        justify-self: center;    /* Центрируем сам блок */
+        max-width: 300px;        /* Чтобы не был шире остальных */
     }
 }
