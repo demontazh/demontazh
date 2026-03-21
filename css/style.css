@@ -340,11 +340,26 @@ input[type="time"]:focus {
 /* ===================== STEPS ===================== */
 .steps-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Указываем, что у нас ровно 2 колонки одинаковой ширины */
+    grid-template-columns: 1fr 1fr; 
     gap: 20px;
-    margin-top: 50px;
 }
-.step-item { text-align: center; position: relative; }
+
+.step-item:last-child {
+    position: relative;
+    /* Растягиваем элемент на 2 колонки (от 1-й линии до конца) */
+    grid-column: 1 / span 2; 
+    
+    /* Центрируем сам блок внутри этой большой ячейки */
+    justify-self: center; 
+    
+    /* Ограничиваем ширину, чтобы он не был шире верхних */
+}
+
+.step-item {
+    text-align: center;
+    max-width: 350px; 
+}
 .step-number {
     width: 60px;
     height: 60px;
